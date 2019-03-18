@@ -9,6 +9,7 @@
   "author": "Iftekhar Ahmad Chowdhury",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.4.1",
     "validator": "^10.11.0"
   }
 }
