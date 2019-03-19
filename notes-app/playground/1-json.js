@@ -19,7 +19,7 @@ const dataJSON = dataBuffer.toString();
 const data = JSON.parse(dataJSON)
 
 data.book.title= "Ego is the Enemy";
-data.book.title = "Ryan Holiday";
+data.book.author = "Ryan Holiday";
 
 
 const newData = JSON.stringify(data);
