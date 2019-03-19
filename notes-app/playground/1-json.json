@@ -1,0 +1,10 @@
+{
+    "name":"Iftekhar Ahmad Chowdhury",
+    "planet":"Earth",
+    "sex":"Male",
+    "book":
+        {
+            "title":"Elite Minds",
+            "author":"Dr. Stan Beecham"
+        }
+}
