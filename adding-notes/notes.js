@@ -42,17 +42,28 @@ const removeNote =(title) => {
       const notes = loadNotes()
       const notesToKeep = notes.filter((note) => note.title !== title)
       if(notes.length > notesToKeep.length){
-         console.log(chalk.green.bgWhite.bold.inverse('Note removed'));
-         saveNotes(notesToKeep);
+         console.log(chalk.green.bgWhite.bold.inverse('Note removed')); 
+         saveNotes(notesToKeep);  
       }else{
          console.log(chalk.red.bgWhite.bold.inverse('No note found'));
       }
 
+   
+}
 
+const listNotes = () =>{
+        const notes = loadNotes()     
+        console.log(chalk.blue.bold.inverse('Your Notes'));
+        notes.forEach((note) => {
+        console.log(note.title)
+    })
+    
+    
 }
 
 module.exports = {
     getNotes: getNotes,
     addNote: addNote,
-    removeNote: removeNote
+    removeNote: removeNote,
+    listNotes: listNotes
 }
